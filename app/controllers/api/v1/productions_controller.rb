@@ -1,5 +1,6 @@
 class Api::V1::ProductionsController < ApplicationController
   before_action :set_production, only: [:show, :update, :destroy]
+  before_action :authenticate_user, only: [:create, :upate, :destroy]
   MAX_PAGINATION_LIMIT = 10
 
   has_scope :by_title

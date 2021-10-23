@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :productions
       resources :characters
       resources :genres
+      resources :users
     end
   end
 end

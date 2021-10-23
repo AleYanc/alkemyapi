@@ -1,6 +1,8 @@
 class Api::V1::CharactersController < ApplicationController
+
   before_action :set_character, only: [:show, :update, :destroy]
   before_action :order_params
+  before_action :authenticate_user, only: [:create, :upate, :destroy]
   MAX_PAGINATION_LIMIT = 10
 
   has_scope :by_name 
