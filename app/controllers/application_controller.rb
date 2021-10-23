@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::API
+class ApplicationController < ActionController::Base
   include ActionController::HttpAuthentication::Token
   def authenticate_user
     token, _options = token_and_options(request)
