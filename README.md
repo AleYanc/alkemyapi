@@ -1,24 +1,56 @@
-# README
+# Alkemy Ruby Challenge - Alejo Yanczuk
+## Este es el repositorio para el challenge de Ruby de Alkemy
+### -Actualmente-
+#### Falta finalizar los tests unitarios y crear un mailer que funcione
+### -Completado-
+#### Todas las consignas excepto las mencionadas en -Actualmente-
+### -Planeado-
+#### Añadir views para visualizar de manera intuitiva los personajes, producciones y estudios
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Versión de ruby y ruby on rails
+### ruby '3.0.2'
+### rails '6.1.4
 
-Things you may want to cover:
+## Gemas utilizadas
+#### "has_scope" para los filtros
+#### "bcrypt" para el password_digest
+#### "rspec_rails" para test unitarios
+#### "factory_bot_rails" para crear instancias de tests en la DB
+#### "pg" base de datos PostgreSQL
 
-* Ruby version
+## Rutas
+### Personajes
+#### GET api/v1/characters ##### para devolver todos los personajes
+#### GET api/v1/characters/:id ##### para devolver un personaje en especifico
+#### POST api/v1/characters ##### para crear un personaje con los parametros correctos (nombre, edad, peso, historia, imagen, producciones y estudios asociados)
+#### PATCH api/v1/characters/:id ##### para actualizar un personaje
+#### DELETE api/v1/characters ##### para eliminar un personaje
 
-* System dependencies
+![POSTMAN colecciones para rutas de personajes (subiendo archivos a imgur)]()
 
-* Configuration
+### Producciones
+#### GET api/v1/productions ##### para devolver todas las producciones
+#### GET api/v1/productions/:id ##### para devolver una produccion en especifico
+#### POST api/v1/productions ##### para crear una produccion con los parametros correctos (titulo, imagen,fecha de estreno, puntuacion, tipo de produccion, personajes, generos y estudios asociados)
+#### PATCH api/v1/productions/:id ##### para actualizar una produccion
+#### DELETE api/v1/productions ##### para eliminar una produccion
 
-* Database creation
+![POSTMAN colecciones para rutas de producciones (subiendo archivos a imgur)]()
 
-* Database initialization
+### Generos
+#### GET api/v1/genres ##### para devolver todos los generos
+#### GET api/v1/genres/:id ##### para devolver un genero en especifico
+#### POST api/v1/genres ##### para crear un genero con los parametros correctos (nombre, imagen)
+#### PATCH api/v1/genres/:id ##### para actualizar un genero
+#### DELETE api/v1/genres ##### para eliminar un genero
 
-* How to run the test suite
+![POSTMAN colecciones para rutas de generos (subiendo archivos a imgur)]()
 
-* Services (job queues, cache servers, search engines, etc.)
+### Estudios
+#### GET api/v1/studios ##### para devolver todos los estudios
+#### GET api/v1/studios/:id ##### para devolver un estudio en especifico
+#### POST api/v1/studios ##### para crear un estudio con los parametros correctos (nombre, imagen)
+#### PATCH api/v1/studios/:id ##### para actualizar un estudio
+#### DELETE api/v1/studios ##### para eliminar un estudio
 
-* Deployment instructions
-
-* ...
+![POSTMAN colecciones para rutas de estudios (subiendo archivos a imgur)]()
