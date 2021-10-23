@@ -1,0 +1,18 @@
+/* Productions*/
+  GET api/v1/productions # Devuelve todas las producciones
+  GET api/v1/productions/:id # Devuelve una produccion y sus detalles (ID ,Titulo, imagen, puntuaje, tipo de produccion (pelicula o serie), fecha de estreno, personajes y generos asociados)
+  PATCH api/v1/productions/:id # Actualiza una produccion y devuelve el objeto modificado
+  DELETE api/v1/productions/:id # ELimina una produccion de la DB
+
+/* Genres */
+  GET api/v1/genres # Devuelve todos los géneros disponibles
+  GET api/v1/genres/:id # Devuelve un genero y sus detalles (ID, nombre, peliculas asociadas)
+  PATCH api/v1/genres/:id # Actualiza un genero y devuelve el objeto modificado
+  DELETE api/v1/genres/:id # ELimina un genero de la DB
+
+/* Characters*/
+  GET api/v1/characters # Devuelve todos los personajes disponibles
+  GET api/v1/characters/:id # Devuelve un personaje y sus detalles (ID, nombre, edad, peso, historia, peliculas asociadas)
+  PATCH api/v1/characters/:id # Actualiza un personaje y devuelve el objeto modificado
+  DELETE api/v1/characters/:id # ELimina un personaje de la DB
+
