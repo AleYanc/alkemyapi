@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  protect_from_forgery with: :null_session
   include ActionController::HttpAuthentication::Token
   def authenticate_user
     token, _options = token_and_options(request)
