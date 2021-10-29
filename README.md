@@ -5,7 +5,7 @@
 ### -Completado-
 #### Todas las consignas excepto las mencionadas en -Actualmente-
 ### -Planeado-
-#### Añadir views para visualizar de manera intuitiva los personajes, producciones y estudios
+#### Añadir views para visualizar de manera intuitiva los personajes, producciones y estudios. Desplegar en Heroku.
 
 ## Versión de ruby y ruby on rails
 ### ruby '3.0.2'
